@@ -69,16 +69,55 @@ console.log('x es', x); // n es 3 , n es 5, x es 16
 
 
 /* ----------------------- */
-
-
-function x(num1, num2) {  
-   return num1+num2;
-}
-console.log(x(2,3))
-console.log(x(3,5))
+                            
+                            
+function x(num1, num2) {    
+   return num1+num2;        
+}                           
+console.log(x(2,3)) 
+console.log(x(3,5)) // 5,8
 
 
 /* ----------------------- */
+                           
+                            
+function y(num1, num2) {                
+   console.log(num1);                       
+   return num1+num2;
+}
+console.log(y(2,3))
+console.log(y(3,5))// 2,5,3,8
+
+
+/* ----------------------- */
+                                       Diagrama T  
+                            ------------------------------
+function z(a,b) {                     c    | 5 -> 8     
+    var c = a + b;                    x    | 5 + 8 -> 13             
+    console.log('c es', c);                |     
+    return c;
+}
+var x = z(2,3) + z(3,5);
+console.log('x es', x); // c es 5, c es 8, x es 13
+
+
+/* ----------------------- */
+
+
+function d(a,b) {
+    var c = a + b;
+    console.log('c es', c);
+    return c;
+}
+var x = d(2,3) + d(3,d(2,1)) + d(d(2,1),d(2,3));
+console.log('x es', x);
+
+
+/* ----------------------- */
+
+
+
+
 
 
 
