@@ -102,15 +102,15 @@ console.log('x es', x); // c es 5, c es 8, x es 13
 
 
 /* ----------------------- */
-
-
-function d(a,b) {
-    var c = a + b;
-    console.log('c es', c);
+                                                              Diagrama T      
+                                                  -----------------------------------      
+function d(a,b) {                                         c        | 5 -> 3 -> 6 -> 3 -> 5 -> 8 
+    var c = a + b;                                        x        | 19     
+    console.log('c es', c);                                        | 
     return c;
 }
 var x = d(2,3) + d(3,d(2,1)) + d(d(2,1),d(2,3));
-console.log('x es', x);
+console.log('x es', x); // c es 5,c es 3, c es 6, c es 3, c es 5, c es 8, x es 19
 
 
 /* ----------------------- */
