@@ -33,3 +33,34 @@ console.log(y) // debe imprimir 32640
 
 
 /*--------------------------------------*/
+
+
+function printSumArray(x) {
+    var sum = 0;
+    for (var i = 0; i < x.length; i++) {
+        sum += x[i];
+    }
+    return sum;
+}
+console.log( printSumArray([1,2,3]) ); // debe imprimir 6
+
+
+/*--------------------------------------*/
+
+
+function mayorElem(x) {
+    var mayorHastaAhora = x[0];
+      for( var i = 0; i < x.length ;i++){
+        if(mayorHastaAhora < x[i]){
+            mayorHastaAhora = x[i];
+        } 
+}       
+
+    return mayorHastaAhora;
+}
+console.log( mayorElem([8,3,11,2,-8]) ); // debe imprimir 11
+
+
+/*--------------------------------------*/
+
+
